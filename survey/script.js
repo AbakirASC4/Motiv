@@ -1,3 +1,7 @@
+//load particle js
+particlesJS.load('particles-js', 'particles.json', function () {
+  console.log('particles.js config loaded');
+});
 // Client ID and API key from the Developer Console
 var rum = true;
 var CLIENT_ID = '171943822330-bl7sccuonh491kq780ka1smj245ur72c.apps.googleusercontent.com';
@@ -129,7 +133,7 @@ function listUpcomingEvents() {
         appendPre(event.summary + ' (' + structure + ')')
       }
     } else {
-      appendPre('No upcoming events found.');
+      appendPre('No upcoming events found.')
     }
   });
 }
