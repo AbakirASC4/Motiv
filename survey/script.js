@@ -1,3 +1,7 @@
+//load particle js
+particlesJS.load('particles-js', 'particles.json', function () {
+  console.log('particles.js config loaded');
+});
 // Client ID and API key from the Developer Console
 
 var rum = true;
@@ -143,7 +147,7 @@ function listUpcomingEvents() {
         appendPre(event.summary + ' (' + structure + ')')
       }
     } else {
-      appendPre('No upcoming events found.');
+      appendPre('No upcoming events found.')
     }
 
   });
